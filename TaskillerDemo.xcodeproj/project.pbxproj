@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0320161F08EB0100D92DA7 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = AE0320151F08EB0100D92DA7 /* Cartfile */; };
+		AE0320191F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */; };
+		AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */; };
+		AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */; };
+		AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */; };
 		AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */; };
 		AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12B91F08D18A005B96B4 /* Main.storyboard */; };
 		AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12BC1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0320151F08EB0100D92DA7 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppStoreStyleHorizontalScrollView.framework; path = Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework; sourceTree = "<group>"; };
+		AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskTableViewCell.swift; sourceTree = "<group>"; };
+		AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskTableViewCell.xib; sourceTree = "<group>"; };
 		AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskillerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9B12BA1F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0320191F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0320171F08EC1300D92DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE9B12A91F08D18A005B96B4 = {
 			isa = PBXGroup;
 			children = (
 				AE9B12B41F08D18A005B96B4 /* TaskillerDemo */,
 				AE9B12B31F08D18A005B96B4 /* Products */,
+				AE0320151F08EB0100D92DA7 /* Cartfile */,
+				AE0320171F08EC1300D92DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +84,9 @@
 				AE9B12C41F08D18A005B96B4 /* Info.plist */,
 				AE9B12BC1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld */,
 				AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */,
+				AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */,
+				AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */,
+				AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */,
 			);
 			path = TaskillerDemo;
 			sourceTree = "<group>";
@@ -77,6 +101,7 @@
 				AE9B12AE1F08D18A005B96B4 /* Sources */,
 				AE9B12AF1F08D18A005B96B4 /* Frameworks */,
 				AE9B12B01F08D18A005B96B4 /* Resources */,
+				AE03201A1F08EC5000D92DA7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,11 +154,30 @@
 			files = (
 				AE9B12C31F08D18A005B96B4 /* LaunchScreen.storyboard in Resources */,
 				AE9B12C01F08D18A005B96B4 /* Assets.xcassets in Resources */,
+				AE0320161F08EB0100D92DA7 /* Cartfile in Resources */,
 				AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */,
+				AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE03201A1F08EC5000D92DA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE9B12AE1F08D18A005B96B4 /* Sources */ = {
@@ -142,6 +186,8 @@
 			files = (
 				AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */,
 				AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */,
+				AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */,
+				AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */,
 				AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TaskillerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -282,6 +332,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TaskillerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -310,6 +364,7 @@
 				AE9B12C91F08D18A005B96B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

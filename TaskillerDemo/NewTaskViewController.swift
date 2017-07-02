@@ -1,5 +1,5 @@
 //
-//  TodayViewController.swift
+//  NewTaskViewController.swift
 //  TaskillerDemo
 //
 //  Created by kingcyk on 02/07/2017.
@@ -8,32 +8,23 @@
 
 import UIKit
 
-class TodayViewController: UIViewController {
+class NewTaskViewController: UIViewController {
 
-    @IBOutlet weak var menuButton: UIButton!
-    @IBOutlet weak var captionLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var avatarView: UIImageView!
-
-    let dateFormatter = DateFormatter()
-    
+    @IBOutlet weak var cancelButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.avatarView.layer.cornerRadius = self.avatarView.frame.size.width / 2
-        self.avatarView.layer.masksToBounds = true
-        
-        self.dateFormatter.locale = Locale.current
-        self.dateFormatter.dateStyle = DateFormatter.Style.long
-        self.dateLabel.text = dateFormatter.string(from: Date()).uppercased()
-        
+
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func cancelAdd(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
