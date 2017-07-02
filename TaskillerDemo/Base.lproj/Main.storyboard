@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17A291j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Today View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TodayViewController" customModule="TaskillerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRd-58-Rnf">
+                                <rect key="frame" x="0.0" y="64" width="20" height="22"/>
+                                <state key="normal" image="icon_menu"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="S0L-Hi-Rby">
+                                <rect key="frame" x="316" y="50" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="2KV-AI-N7J"/>
+                                    <constraint firstAttribute="width" constant="43" id="mtc-FA-0SR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HX-nh-GYD">
+                                <rect key="frame" x="32" y="45" width="119" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1m-4b-R7X">
+                                <rect key="frame" x="32" y="32" width="29.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIb-47-9IS">
+                                <rect key="frame" x="335" y="627" width="24" height="24"/>
+                                <state key="normal" image="add"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhW-0f-6pK">
+                                <rect key="frame" x="287" y="627" width="24" height="24"/>
+                                <state key="normal" image="calendar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYE-0v-NBZ">
+                                <rect key="frame" x="239" y="627" width="24" height="24"/>
+                                <state key="normal" image="question"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-lO-exZ">
+                                <rect key="frame" x="0.0" y="459" width="375" height="128"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YBQ-lO-exZ" secondAttribute="trailing" id="0Ts-q5-FBJ"/>
+                            <constraint firstItem="YYE-0v-NBZ" firstAttribute="top" secondItem="YBQ-lO-exZ" secondAttribute="bottom" constant="40" id="2cr-Nh-3Bs"/>
+                            <constraint firstItem="8HX-nh-GYD" firstAttribute="leading" secondItem="B1m-4b-R7X" secondAttribute="leading" id="2pz-8K-tfK"/>
+                            <constraint firstItem="8HX-nh-GYD" firstAttribute="leading" secondItem="hRd-58-Rnf" secondAttribute="trailing" constant="12" id="9QL-PE-deQ"/>
+                            <constraint firstItem="hRd-58-Rnf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C4d-8E-5Ff"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aIb-47-9IS" secondAttribute="bottom" constant="16" id="Gr6-wG-AYr"/>
+                            <constraint firstItem="B1m-4b-R7X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="TNs-sr-4it"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S0L-Hi-Rby" secondAttribute="trailing" id="Wdb-8A-nb5"/>
+                            <constraint firstItem="aIb-47-9IS" firstAttribute="leading" secondItem="hhW-0f-6pK" secondAttribute="trailing" constant="24" id="dla-sM-git"/>
+                            <constraint firstItem="S0L-Hi-Rby" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="feT-Zy-w3I"/>
+                            <constraint firstItem="hhW-0f-6pK" firstAttribute="leading" secondItem="YYE-0v-NBZ" secondAttribute="trailing" constant="24" id="feY-fv-d5k"/>
+                            <constraint firstItem="YBQ-lO-exZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hac-Xs-mqq"/>
+                            <constraint firstItem="aIb-47-9IS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jbB-9M-VQn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhW-0f-6pK" secondAttribute="bottom" constant="16" id="mLe-w7-zxM"/>
+                            <constraint firstItem="S0L-Hi-Rby" firstAttribute="bottom" secondItem="8HX-nh-GYD" secondAttribute="bottom" id="obc-PP-bQW"/>
+                            <constraint firstItem="hRd-58-Rnf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="vSh-ZB-OH6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YYE-0v-NBZ" secondAttribute="bottom" constant="16" id="vl4-tI-cXB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarView" destination="S0L-Hi-Rby" id="mgO-L1-adw"/>
+                        <outlet property="captionLabel" destination="8HX-nh-GYD" id="oBZ-63-0lj"/>
+                        <outlet property="dateLabel" destination="B1m-4b-R7X" id="Tj8-20-Isq"/>
+                        <outlet property="menuButton" destination="hRd-58-Rnf" id="Y2f-20-ZCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="24" height="24"/>
+        <image name="avatar" width="320" height="320"/>
+        <image name="calendar" width="24" height="24"/>
+        <image name="icon_menu" width="20" height="17"/>
+        <image name="question" width="24" height="24"/>
+    </resources>
 </document>

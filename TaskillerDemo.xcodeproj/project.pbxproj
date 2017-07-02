@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */; };
-		AE9B12B81F08D18A005B96B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12B71F08D18A005B96B4 /* ViewController.swift */; };
 		AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12B91F08D18A005B96B4 /* Main.storyboard */; };
 		AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12BC1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld */; };
 		AE9B12C01F08D18A005B96B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12BF1F08D18A005B96B4 /* Assets.xcassets */; };
 		AE9B12C31F08D18A005B96B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12C11F08D18A005B96B4 /* LaunchScreen.storyboard */; };
+		AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskillerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE9B12B71F08D18A005B96B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE9B12BA1F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE9B12BD1F08D18A005B96B4 /* TaskillerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskillerDemo.xcdatamodel; sourceTree = "<group>"; };
 		AE9B12BF1F08D18A005B96B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE9B12C21F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE9B12C41F08D18A005B96B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */,
-				AE9B12B71F08D18A005B96B4 /* ViewController.swift */,
 				AE9B12B91F08D18A005B96B4 /* Main.storyboard */,
 				AE9B12BF1F08D18A005B96B4 /* Assets.xcassets */,
 				AE9B12C11F08D18A005B96B4 /* LaunchScreen.storyboard */,
 				AE9B12C41F08D18A005B96B4 /* Info.plist */,
 				AE9B12BC1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld */,
+				AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */,
 			);
 			path = TaskillerDemo;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9B12B81F08D18A005B96B4 /* ViewController.swift in Sources */,
+				AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */,
 				AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */,
 				AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */,
 			);
@@ -269,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				INFOPLIST_FILE = TaskillerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				INFOPLIST_FILE = TaskillerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
