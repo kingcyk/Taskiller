@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TaskillerDemoKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AE80B81D1F14D44E00F7CB29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AE9B12B11F08D18A005B96B4</key>
 		<dict>
 			<key>primary</key>

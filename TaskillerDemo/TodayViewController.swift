@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TaskillerDemoKit
 
 class TodayViewController: UIViewController {
 
@@ -19,8 +20,7 @@ class TodayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.avatarView.layer.cornerRadius = self.avatarView.frame.size.width / 2
-        self.avatarView.layer.masksToBounds = true
+        roundAvatar(avatar: avatarView)
         
         self.dateFormatter.locale = Locale.current
         self.dateFormatter.dateStyle = DateFormatter.Style.long

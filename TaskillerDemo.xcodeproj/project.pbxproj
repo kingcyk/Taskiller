@@ -10,22 +10,60 @@
 		AE0320161F08EB0100D92DA7 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = AE0320151F08EB0100D92DA7 /* Cartfile */; };
 		AE0320191F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */; };
 		AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */; };
+		AE061C161F0919AE00F91267 /* NewTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE061C141F0919AE00F91267 /* NewTaskCollectionViewCell.swift */; };
+		AE061C171F0919AE00F91267 /* NewTaskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */; };
 		AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */; };
 		AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */; };
+		AE80B8221F14D44F00F7CB29 /* TaskillerDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE80B8251F14D44F00F7CB29 /* TaskillerDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */; };
+		AE80B8261F14D44F00F7CB29 /* TaskillerDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE80B82C1F14D47C00F7CB29 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80B82B1F14D47C00F7CB29 /* Common.swift */; };
 		AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */; };
 		AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12B91F08D18A005B96B4 /* Main.storyboard */; };
 		AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12BC1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld */; };
 		AE9B12C01F08D18A005B96B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12BF1F08D18A005B96B4 /* Assets.xcassets */; };
 		AE9B12C31F08D18A005B96B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12C11F08D18A005B96B4 /* LaunchScreen.storyboard */; };
 		AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */; };
+		AE9BA55C1F09265100276EEF /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BA55B1F09265100276EEF /* ListsViewController.swift */; };
+		AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BA55D1F09266A00276EEF /* GalleryViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE80B8231F14D44F00F7CB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9B12AA1F08D18A005B96B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE80B81D1F14D44E00F7CB29;
+			remoteInfo = TaskillerDemoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE80B82A1F14D44F00F7CB29 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE80B8261F14D44F00F7CB29 /* TaskillerDemoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE0320151F08EB0100D92DA7 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppStoreStyleHorizontalScrollView.framework; path = Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework; sourceTree = "<group>"; };
 		AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		AE061C141F0919AE00F91267 /* NewTaskCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskTableViewCell.swift; sourceTree = "<group>"; };
 		AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskTableViewCell.xib; sourceTree = "<group>"; };
+		AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskillerDemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskillerDemoKit.h; sourceTree = "<group>"; };
+		AE80B8211F14D44F00F7CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE80B82B1F14D47C00F7CB29 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskillerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9B12BA1F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,13 +72,23 @@
 		AE9B12C21F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE9B12C41F08D18A005B96B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		AE9BA55B1F09265100276EEF /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		AE9BA55D1F09266A00276EEF /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE80B81A1F14D44E00F7CB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE9B12AF1F08D18A005B96B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE80B8251F14D44F00F7CB29 /* TaskillerDemoKit.framework in Frameworks */,
 				AE0320191F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,10 +104,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE80B81F1F14D44F00F7CB29 /* TaskillerDemoKit */ = {
+			isa = PBXGroup;
+			children = (
+				AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */,
+				AE80B8211F14D44F00F7CB29 /* Info.plist */,
+				AE80B82B1F14D47C00F7CB29 /* Common.swift */,
+			);
+			path = TaskillerDemoKit;
+			sourceTree = "<group>";
+		};
 		AE9B12A91F08D18A005B96B4 = {
 			isa = PBXGroup;
 			children = (
 				AE9B12B41F08D18A005B96B4 /* TaskillerDemo */,
+				AE80B81F1F14D44F00F7CB29 /* TaskillerDemoKit */,
 				AE9B12B31F08D18A005B96B4 /* Products */,
 				AE0320151F08EB0100D92DA7 /* Cartfile */,
 				AE0320171F08EC1300D92DA7 /* Frameworks */,
@@ -70,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */,
+				AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,13 +147,46 @@
 				AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */,
 				AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */,
 				AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */,
+				AE061C141F0919AE00F91267 /* NewTaskCollectionViewCell.swift */,
+				AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */,
+				AE9BA55B1F09265100276EEF /* ListsViewController.swift */,
+				AE9BA55D1F09266A00276EEF /* GalleryViewController.swift */,
 			);
 			path = TaskillerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		AE80B81B1F14D44E00F7CB29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE80B8221F14D44F00F7CB29 /* TaskillerDemoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		AE80B81D1F14D44E00F7CB29 /* TaskillerDemoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE80B8291F14D44F00F7CB29 /* Build configuration list for PBXNativeTarget "TaskillerDemoKit" */;
+			buildPhases = (
+				AE80B8191F14D44E00F7CB29 /* Sources */,
+				AE80B81A1F14D44E00F7CB29 /* Frameworks */,
+				AE80B81B1F14D44E00F7CB29 /* Headers */,
+				AE80B81C1F14D44E00F7CB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskillerDemoKit;
+			productName = TaskillerDemoKit;
+			productReference = AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AE9B12B11F08D18A005B96B4 /* TaskillerDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE9B12C71F08D18A005B96B4 /* Build configuration list for PBXNativeTarget "TaskillerDemo" */;
@@ -102,10 +195,12 @@
 				AE9B12AF1F08D18A005B96B4 /* Frameworks */,
 				AE9B12B01F08D18A005B96B4 /* Resources */,
 				AE03201A1F08EC5000D92DA7 /* ShellScript */,
+				AE80B82A1F14D44F00F7CB29 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE80B8241F14D44F00F7CB29 /* PBXTargetDependency */,
 			);
 			name = TaskillerDemo;
 			productName = TaskillerDemo;
@@ -122,6 +217,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = kingcyk;
 				TargetAttributes = {
+					AE80B81D1F14D44E00F7CB29 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 982HK3878L;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
 					AE9B12B11F08D18A005B96B4 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 982HK3878L;
@@ -143,17 +244,26 @@
 			projectRoot = "";
 			targets = (
 				AE9B12B11F08D18A005B96B4 /* TaskillerDemo */,
+				AE80B81D1F14D44E00F7CB29 /* TaskillerDemoKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE80B81C1F14D44E00F7CB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE9B12B01F08D18A005B96B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE9B12C31F08D18A005B96B4 /* LaunchScreen.storyboard in Resources */,
 				AE9B12C01F08D18A005B96B4 /* Assets.xcassets in Resources */,
+				AE061C171F0919AE00F91267 /* NewTaskCollectionViewCell.xib in Resources */,
 				AE0320161F08EB0100D92DA7 /* Cartfile in Resources */,
 				AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */,
 				AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */,
@@ -180,19 +290,38 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE80B8191F14D44E00F7CB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE80B82C1F14D47C00F7CB29 /* Common.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE9B12AE1F08D18A005B96B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9BA55C1F09265100276EEF /* ListsViewController.swift in Sources */,
 				AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */,
 				AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */,
 				AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */,
 				AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */,
+				AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */,
+				AE061C161F0919AE00F91267 /* NewTaskCollectionViewCell.swift in Sources */,
 				AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE80B8241F14D44F00F7CB29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE80B81D1F14D44E00F7CB29 /* TaskillerDemoKit */;
+			targetProxy = AE80B8231F14D44F00F7CB29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AE9B12B91F08D18A005B96B4 /* Main.storyboard */ = {
@@ -214,6 +343,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE80B8271F14D44F00F7CB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 982HK3878L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TaskillerDemoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE80B8281F14D44F00F7CB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 982HK3878L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TaskillerDemoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AE9B12C51F08D18A005B96B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,6 +490,7 @@
 		AE9B12C81F08D18A005B96B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -330,6 +509,7 @@
 		AE9B12C91F08D18A005B96B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -348,6 +528,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE80B8291F14D44F00F7CB29 /* Build configuration list for PBXNativeTarget "TaskillerDemoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE80B8271F14D44F00F7CB29 /* Debug */,
+				AE80B8281F14D44F00F7CB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AE9B12AD1F08D18A005B96B4 /* Build configuration list for PBXProject "TaskillerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

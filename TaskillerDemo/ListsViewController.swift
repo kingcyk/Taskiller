@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import TaskillerDemoKit
 
 class ListsViewController: UIViewController {
 
+    @IBOutlet weak var avatarView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        roundAvatar(avatar: avatarView)
 
         // Do any additional setup after loading the view.
     }

@@ -10,6 +10,7 @@ import UIKit
 
 class NewTaskCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var choiceName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -11,8 +11,37 @@ import UIKit
 class NewTaskViewController: UIViewController {
 
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var taskName: UITextField!
+    @IBOutlet weak var selectTable: UITableView!
+    @IBOutlet weak var choiceCollection: UICollectionView!
+    
+    @IBOutlet weak var createButton: UIButton!
+    
+    let icons = [
+        "duetime",
+        "cost_grey",
+        "repeat_grey"
+    ]
+    
+    let names = [
+        "Due time",
+        "Cost time",
+        "Repeat"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.selectTable.rowHeight = 50
+        self.selectTable.separatorStyle = .none
+        self.selectTable.register(UINib(nibName: "NewTaskTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Basic")
+        self.selectTable.dataSource = self
+        self.selectTable.delegate = self
+        self.selectTable.isScrollEnabled = false
+        
+        self.choiceCollection.register(UINib(nibName: "NewTaskCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "Choice")
+        self.choiceCollection.dataSource = self
+        self.choiceCollection.delegate = self
+        self.choiceCollection.isScrollEnabled = false
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +55,9 @@ class NewTaskViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func createTask(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -35,5 +67,39 @@ class NewTaskViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension NewTaskViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Basic", for: indexPath) as! NewTaskTableViewCell
+        cell.nameLabel.text = names[indexPath.row]
+        cell.categoryImage.image = UIImage(named: icons[indexPath.row])
+        cell.valueLabel.isHidden = indexPath.row == 1 ? false : true
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+}
+
+extension NewTaskViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 9
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Choice", for: indexPath) as! NewTaskCollectionViewCell
+        if indexPath.row == 8 {
+            cell.choiceName.text = "..."
+        }
+        return cell
+    }
 
 }

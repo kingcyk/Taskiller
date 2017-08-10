@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+public func roundAvatar(avatar: UIImageView) {
+    avatar.layer.cornerRadius = avatar.frame.size.width / 2
+    avatar.layer.masksToBounds = true
+}
