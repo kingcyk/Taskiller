@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+public let AppGroupIdentifier = "group.Taskiller"
+public let TaskillerDemoKitIdentifier = "com.kingcyk.TaskillerKit"
 
 public func roundAvatar(avatar: UIImageView) {
     avatar.layer.cornerRadius = avatar.frame.size.width / 2

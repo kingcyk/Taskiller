@@ -1,1 +1,3 @@
 github "terenceLuffy/AppStoreStyleHorizontalScrollView" ~> 1.5.1
+github "kishikawakatsumi/KeychainAccess"
+github "realm/realm-cocoa"

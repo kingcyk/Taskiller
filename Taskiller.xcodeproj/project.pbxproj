@@ -14,9 +14,11 @@
 		AE061C171F0919AE00F91267 /* NewTaskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */; };
 		AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */; };
 		AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */; };
+		AE551A281F65958700D40263 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE551A261F65958700D40263 /* Realm.framework */; };
+		AE551A291F65958700D40263 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE551A271F65958700D40263 /* RealmSwift.framework */; };
 		AE80B8221F14D44F00F7CB29 /* TaskillerDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE80B8251F14D44F00F7CB29 /* TaskillerDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */; };
-		AE80B8261F14D44F00F7CB29 /* TaskillerDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE80B8251F14D44F00F7CB29 /* TaskillerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */; };
+		AE80B8261F14D44F00F7CB29 /* TaskillerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE80B82C1F14D47C00F7CB29 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80B82B1F14D47C00F7CB29 /* Common.swift */; };
 		AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */; };
 		AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12B91F08D18A005B96B4 /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 		AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */; };
 		AE9BA55C1F09265100276EEF /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BA55B1F09265100276EEF /* ListsViewController.swift */; };
 		AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BA55D1F09266A00276EEF /* GalleryViewController.swift */; };
+		AE9BE2231F65B81D0084A7F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */; };
+		AE9BE2251F65BDB20084A7F7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */; };
+		AEA20C931F4B3F5A007E910E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA20C921F4B3F5A007E910E /* MenuViewController.swift */; };
+		AEBA6F1F1F629854009EC4BD /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6F1E1F629854009EC4BD /* AccountManager.swift */; };
+		AEBA6F211F629A0B009EC4BD /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */; };
+		AEBA6F221F629BAC009EC4BD /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AE80B8261F14D44F00F7CB29 /* TaskillerDemoKit.framework in Embed Frameworks */,
+				AE80B8261F14D44F00F7CB29 /* TaskillerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,15 +64,18 @@
 		AE0320151F08EB0100D92DA7 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppStoreStyleHorizontalScrollView.framework; path = Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework; sourceTree = "<group>"; };
 		AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		AE048A3B1F63E246000D1118 /* Taskiller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Taskiller.entitlements; sourceTree = SOURCE_ROOT; };
 		AE061C141F0919AE00F91267 /* NewTaskCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskTableViewCell.swift; sourceTree = "<group>"; };
 		AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskTableViewCell.xib; sourceTree = "<group>"; };
-		AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskillerDemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE551A261F65958700D40263 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		AE551A271F65958700D40263 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskillerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskillerDemoKit.h; sourceTree = "<group>"; };
 		AE80B8211F14D44F00F7CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE80B82B1F14D47C00F7CB29 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskillerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9B12B21F08D18A005B96B4 /* Taskiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9B12BA1F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE9B12BD1F08D18A005B96B4 /* TaskillerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskillerDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -74,6 +85,11 @@
 		AE9B12CA1F08D2B2005B96B4 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		AE9BA55B1F09265100276EEF /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 		AE9BA55D1F09266A00276EEF /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AEA20C921F4B3F5A007E910E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AEBA6F1E1F629854009EC4BD /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBA6F221F629BAC009EC4BD /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE80B8251F14D44F00F7CB29 /* TaskillerDemoKit.framework in Frameworks */,
+				AE551A281F65958700D40263 /* Realm.framework in Frameworks */,
+				AE551A291F65958700D40263 /* RealmSwift.framework in Frameworks */,
+				AEBA6F211F629A0B009EC4BD /* KeychainAccess.framework in Frameworks */,
+				AE80B8251F14D44F00F7CB29 /* TaskillerKit.framework in Frameworks */,
 				AE0320191F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,26 +119,31 @@
 		AE0320171F08EC1300D92DA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE551A261F65958700D40263 /* Realm.framework */,
+				AE551A271F65958700D40263 /* RealmSwift.framework */,
+				AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */,
 				AE0320181F08EC1300D92DA7 /* AppStoreStyleHorizontalScrollView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AE80B81F1F14D44F00F7CB29 /* TaskillerDemoKit */ = {
+		AE80B81F1F14D44F00F7CB29 /* TaskillerKit */ = {
 			isa = PBXGroup;
 			children = (
+				AEBA6F1D1F629824009EC4BD /* Account */,
 				AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */,
 				AE80B8211F14D44F00F7CB29 /* Info.plist */,
 				AE80B82B1F14D47C00F7CB29 /* Common.swift */,
 			);
+			name = TaskillerKit;
 			path = TaskillerDemoKit;
 			sourceTree = "<group>";
 		};
 		AE9B12A91F08D18A005B96B4 = {
 			isa = PBXGroup;
 			children = (
-				AE9B12B41F08D18A005B96B4 /* TaskillerDemo */,
-				AE80B81F1F14D44F00F7CB29 /* TaskillerDemoKit */,
+				AE9B12B41F08D18A005B96B4 /* Taskiller */,
+				AE80B81F1F14D44F00F7CB29 /* TaskillerKit */,
 				AE9B12B31F08D18A005B96B4 /* Products */,
 				AE0320151F08EB0100D92DA7 /* Cartfile */,
 				AE0320171F08EC1300D92DA7 /* Frameworks */,
@@ -128,15 +153,16 @@
 		AE9B12B31F08D18A005B96B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */,
-				AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */,
+				AE9B12B21F08D18A005B96B4 /* Taskiller.app */,
+				AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE9B12B41F08D18A005B96B4 /* TaskillerDemo */ = {
+		AE9B12B41F08D18A005B96B4 /* Taskiller */ = {
 			isa = PBXGroup;
 			children = (
+				AE048A3B1F63E246000D1118 /* Taskiller.entitlements */,
 				AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */,
 				AE9B12B91F08D18A005B96B4 /* Main.storyboard */,
 				AE9B12BF1F08D18A005B96B4 /* Assets.xcassets */,
@@ -151,8 +177,20 @@
 				AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */,
 				AE9BA55B1F09265100276EEF /* ListsViewController.swift */,
 				AE9BA55D1F09266A00276EEF /* GalleryViewController.swift */,
+				AEA20C921F4B3F5A007E910E /* MenuViewController.swift */,
+				AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */,
+				AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */,
 			);
+			name = Taskiller;
 			path = TaskillerDemo;
+			sourceTree = "<group>";
+		};
+		AEBA6F1D1F629824009EC4BD /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				AEBA6F1E1F629854009EC4BD /* AccountManager.swift */,
+			);
+			name = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +207,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AE80B81D1F14D44E00F7CB29 /* TaskillerDemoKit */ = {
+		AE80B81D1F14D44E00F7CB29 /* TaskillerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE80B8291F14D44F00F7CB29 /* Build configuration list for PBXNativeTarget "TaskillerDemoKit" */;
+			buildConfigurationList = AE80B8291F14D44F00F7CB29 /* Build configuration list for PBXNativeTarget "TaskillerKit" */;
 			buildPhases = (
 				AE80B8191F14D44E00F7CB29 /* Sources */,
 				AE80B81A1F14D44E00F7CB29 /* Frameworks */,
@@ -182,14 +220,14 @@
 			);
 			dependencies = (
 			);
-			name = TaskillerDemoKit;
+			name = TaskillerKit;
 			productName = TaskillerDemoKit;
-			productReference = AE80B81E1F14D44E00F7CB29 /* TaskillerDemoKit.framework */;
+			productReference = AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AE9B12B11F08D18A005B96B4 /* TaskillerDemo */ = {
+		AE9B12B11F08D18A005B96B4 /* Taskiller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE9B12C71F08D18A005B96B4 /* Build configuration list for PBXNativeTarget "TaskillerDemo" */;
+			buildConfigurationList = AE9B12C71F08D18A005B96B4 /* Build configuration list for PBXNativeTarget "Taskiller" */;
 			buildPhases = (
 				AE9B12AE1F08D18A005B96B4 /* Sources */,
 				AE9B12AF1F08D18A005B96B4 /* Frameworks */,
@@ -202,9 +240,9 @@
 			dependencies = (
 				AE80B8241F14D44F00F7CB29 /* PBXTargetDependency */,
 			);
-			name = TaskillerDemo;
+			name = Taskiller;
 			productName = TaskillerDemo;
-			productReference = AE9B12B21F08D18A005B96B4 /* TaskillerDemo.app */;
+			productReference = AE9B12B21F08D18A005B96B4 /* Taskiller.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -219,18 +257,28 @@
 				TargetAttributes = {
 					AE80B81D1F14D44E00F7CB29 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 982HK3878L;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					AE9B12B11F08D18A005B96B4 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 982HK3878L;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = AE9B12AD1F08D18A005B96B4 /* Build configuration list for PBXProject "TaskillerDemo" */;
+			buildConfigurationList = AE9B12AD1F08D18A005B96B4 /* Build configuration list for PBXProject "Taskiller" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,8 +291,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE9B12B11F08D18A005B96B4 /* TaskillerDemo */,
-				AE80B81D1F14D44E00F7CB29 /* TaskillerDemoKit */,
+				AE9B12B11F08D18A005B96B4 /* Taskiller */,
+				AE80B81D1F14D44E00F7CB29 /* TaskillerKit */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +328,9 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -295,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE80B82C1F14D47C00F7CB29 /* Common.swift in Sources */,
+				AEBA6F1F1F629854009EC4BD /* AccountManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +355,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9BA55C1F09265100276EEF /* ListsViewController.swift in Sources */,
+				AE9BE2251F65BDB20084A7F7 /* RegisterViewController.swift in Sources */,
 				AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */,
 				AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */,
 				AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */,
+				AEA20C931F4B3F5A007E910E /* MenuViewController.swift in Sources */,
 				AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */,
 				AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */,
 				AE061C161F0919AE00F91267 /* NewTaskCollectionViewCell.swift in Sources */,
+				AE9BE2231F65B81D0084A7F7 /* LoginViewController.swift in Sources */,
 				AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +373,7 @@
 /* Begin PBXTargetDependency section */
 		AE80B8241F14D44F00F7CB29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE80B81D1F14D44E00F7CB29 /* TaskillerDemoKit */;
+			target = AE80B81D1F14D44E00F7CB29 /* TaskillerKit */;
 			targetProxy = AE80B8231F14D44F00F7CB29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -350,16 +405,21 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 982HK3878L;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TaskillerDemoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemoKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -375,16 +435,21 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 982HK3878L;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TaskillerDemoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemoKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -492,6 +557,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Taskiller.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 982HK3878L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,9 +567,11 @@
 				INFOPLIST_FILE = TaskillerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.Taskiller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -511,6 +580,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Taskiller.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 982HK3878L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,24 +590,27 @@
 				INFOPLIST_FILE = TaskillerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.TaskillerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.Taskiller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE80B8291F14D44F00F7CB29 /* Build configuration list for PBXNativeTarget "TaskillerDemoKit" */ = {
+		AE80B8291F14D44F00F7CB29 /* Build configuration list for PBXNativeTarget "TaskillerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE80B8271F14D44F00F7CB29 /* Debug */,
 				AE80B8281F14D44F00F7CB29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		AE9B12AD1F08D18A005B96B4 /* Build configuration list for PBXProject "TaskillerDemo" */ = {
+		AE9B12AD1F08D18A005B96B4 /* Build configuration list for PBXProject "Taskiller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE9B12C51F08D18A005B96B4 /* Debug */,
@@ -545,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE9B12C71F08D18A005B96B4 /* Build configuration list for PBXNativeTarget "TaskillerDemo" */ = {
+		AE9B12C71F08D18A005B96B4 /* Build configuration list for PBXNativeTarget "Taskiller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE9B12C81F08D18A005B96B4 /* Debug */,

@@ -1,20 +1,20 @@
 //
-//  ListsViewController.swift
-//  TaskillerDemo
+//  RegisterViewController.swift
+//  Taskiller
 //
-//  Created by kingcyk on 02/07/2017.
+//  Created by kingcyk on 11/09/2017.
 //  Copyright © 2017 kingcyk. All rights reserved.
 //
 
 import UIKit
-import TaskillerKit
 
-class ListsViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
-    @IBOutlet weak var avatarView: UIImageView!
+    @IBOutlet weak var confirmTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var userNameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        roundAvatar(avatar: avatarView)
 
         // Do any additional setup after loading the view.
     }
@@ -25,6 +25,8 @@ class ListsViewController: UIViewController {
     }
     
 
+    @IBAction func register(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

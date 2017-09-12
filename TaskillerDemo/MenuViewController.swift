@@ -1,20 +1,17 @@
 //
-//  ListsViewController.swift
+//  MenuViewController.swift
 //  TaskillerDemo
 //
-//  Created by kingcyk on 02/07/2017.
+//  Created by kingcyk on 22/08/2017.
 //  Copyright © 2017 kingcyk. All rights reserved.
 //
 
 import UIKit
-import TaskillerKit
 
-class ListsViewController: UIViewController {
+class MenuViewController: UIViewController {
 
-    @IBOutlet weak var avatarView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        roundAvatar(avatar: avatarView)
 
         // Do any additional setup after loading the view.
     }

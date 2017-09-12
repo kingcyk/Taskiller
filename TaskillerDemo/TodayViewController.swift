@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TaskillerDemoKit
+import TaskillerKit
 
 class TodayViewController: UIViewController {
 
