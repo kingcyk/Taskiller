@@ -22,9 +22,9 @@ class TodayViewController: UIViewController {
         super.viewDidLoad()
         roundAvatar(avatar: avatarView)
         
-        self.dateFormatter.locale = Locale.current
-        self.dateFormatter.dateStyle = DateFormatter.Style.long
-        self.dateLabel.text = dateFormatter.string(from: Date()).uppercased()
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateStyle = DateFormatter.Style.long
+        dateLabel.text = dateFormatter.string(from: Date()).uppercased()
         
         // Do any additional setup after loading the view.
     }

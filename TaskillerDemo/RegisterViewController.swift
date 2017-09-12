@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var confirmTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
+    
+    let serverURL = "http://taskiller.kingcyk.com:9080"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +30,22 @@ class RegisterViewController: UIViewController {
     
 
     @IBAction func register(_ sender: UIButton) {
+        let username = userNameTextField.text!
+        let password = passwordTextField.text!
+        let confirm = confirmTextField.text!
+        if password != confirm {
+            // TODO: - Show error
+            return
+        } else {
+            let usernameCredentials = SyncCredentials.usernamePassword(username: username, password: password, register: true)
+            SyncUser.logIn(with: usernameCredentials, server: URL(string: serverURL)!, onCompletion: { (user, error) in
+                if let user = user {
+                    
+                } else if let error = error {
+                    print(error.localizedDescription)
+                }
+            })
+        }
     }
     /*
     // MARK: - Navigation

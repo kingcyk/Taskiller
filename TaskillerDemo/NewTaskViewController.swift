@@ -14,7 +14,6 @@ class NewTaskViewController: UIViewController {
     @IBOutlet weak var taskName: UITextField!
     @IBOutlet weak var selectTable: UITableView!
     @IBOutlet weak var choiceCollection: UICollectionView!
-    
     @IBOutlet weak var createButton: UIButton!
     
     let icons = [
@@ -31,17 +30,17 @@ class NewTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.selectTable.rowHeight = 50
-        self.selectTable.separatorStyle = .none
-        self.selectTable.register(UINib(nibName: "NewTaskTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Basic")
-        self.selectTable.dataSource = self
-        self.selectTable.delegate = self
-        self.selectTable.isScrollEnabled = false
+        selectTable.rowHeight = 50
+        selectTable.separatorStyle = .none
+        selectTable.register(UINib(nibName: "NewTaskTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Basic")
+        selectTable.dataSource = self
+        selectTable.delegate = self
+        selectTable.isScrollEnabled = false
         
-        self.choiceCollection.register(UINib(nibName: "NewTaskCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "Choice")
-        self.choiceCollection.dataSource = self
-        self.choiceCollection.delegate = self
-        self.choiceCollection.isScrollEnabled = false
+        choiceCollection.register(UINib(nibName: "NewTaskCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "Choice")
+        choiceCollection.dataSource = self
+        choiceCollection.delegate = self
+        choiceCollection.isScrollEnabled = false
 
         // Do any additional setup after loading the view.
     }
@@ -52,11 +51,11 @@ class NewTaskViewController: UIViewController {
     }
     
     @IBAction func cancelAdd(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func createTask(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

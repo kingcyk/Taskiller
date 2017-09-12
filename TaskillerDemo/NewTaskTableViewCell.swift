@@ -13,6 +13,7 @@ class NewTaskTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var disclosureIndicator: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

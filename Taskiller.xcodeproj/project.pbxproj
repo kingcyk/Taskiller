@@ -31,6 +31,7 @@
 		AE9BE2231F65B81D0084A7F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */; };
 		AE9BE2251F65BDB20084A7F7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */; };
 		AEA20C931F4B3F5A007E910E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA20C921F4B3F5A007E910E /* MenuViewController.swift */; };
+		AEA77D791F68060900A81171 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA77D781F68060900A81171 /* MeViewController.swift */; };
 		AEBA6F1F1F629854009EC4BD /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6F1E1F629854009EC4BD /* AccountManager.swift */; };
 		AEBA6F211F629A0B009EC4BD /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */; };
 		AEBA6F221F629BAC009EC4BD /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */; };
@@ -88,6 +89,7 @@
 		AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AEA20C921F4B3F5A007E910E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AEA77D781F68060900A81171 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		AEBA6F1E1F629854009EC4BD /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 				AEA20C921F4B3F5A007E910E /* MenuViewController.swift */,
 				AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */,
 				AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */,
+				AEA77D781F68060900A81171 /* MeViewController.swift */,
 			);
 			name = Taskiller;
 			path = TaskillerDemo;
@@ -360,6 +363,7 @@
 				AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */,
 				AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */,
 				AEA20C931F4B3F5A007E910E /* MenuViewController.swift in Sources */,
+				AEA77D791F68060900A81171 /* MeViewController.swift in Sources */,
 				AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */,
 				AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */,
 				AE061C161F0919AE00F91267 /* NewTaskCollectionViewCell.swift in Sources */,
