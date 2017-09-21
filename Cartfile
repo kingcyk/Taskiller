@@ -2,3 +2,5 @@ github "terenceLuffy/AppStoreStyleHorizontalScrollView" ~> 1.5.1
 github "kishikawakatsumi/KeychainAccess"
 github "realm/realm-cocoa"
 github "WenchaoD/FSCalendar"
+github "SVProgressHUD/SVProgressHUD"
+github "skywinder/ActionSheetPicker-3.0"

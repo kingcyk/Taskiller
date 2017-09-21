@@ -34,7 +34,7 @@ class MeViewController: UIViewController {
         profileTable.dataSource = self
         profileTable.delegate = self
         profileTable.isScrollEnabled = false
-        profileTable.register(UINib(nibName: "NewTaskTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Cell")
+        profileTable.register(UINib(nibName: "NewTaskTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Basic")
         
         // Do any additional setup after loading the view.
     }
@@ -47,7 +47,7 @@ class MeViewController: UIViewController {
     @IBAction func editProfile(_ sender: Any) {
         
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -69,7 +69,7 @@ extension MeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = profileTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewTaskTableViewCell
+        let cell = profileTable.dequeueReusableCell(withIdentifier: "Basic", for: indexPath) as! NewTaskTableViewCell
         cell.nameLabel.text = names[indexPath.row]
         cell.categoryImage.image = UIImage(named: icons[indexPath.row])
         cell.valueLabel.isEnabled = false

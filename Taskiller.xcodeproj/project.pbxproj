@@ -12,14 +12,22 @@
 		AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03201B1F08ED7200D92DA7 /* NewTaskViewController.swift */; };
 		AE061C161F0919AE00F91267 /* NewTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE061C141F0919AE00F91267 /* NewTaskCollectionViewCell.swift */; };
 		AE061C171F0919AE00F91267 /* NewTaskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */; };
+		AE0901331F6FEE2600087E1D /* CommingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0901321F6FEE2600087E1D /* CommingViewController.swift */; };
+		AE4513C01F683B70000F8BB6 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4513BF1F683B70000F8BB6 /* SVProgressHUD.framework */; };
 		AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */; };
 		AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */; };
 		AE551A281F65958700D40263 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE551A261F65958700D40263 /* Realm.framework */; };
 		AE551A291F65958700D40263 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE551A271F65958700D40263 /* RealmSwift.framework */; };
+		AE64D0111F6A523A006C6496 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64D0101F6A523A006C6496 /* SettingsViewController.swift */; };
 		AE80B8221F14D44F00F7CB29 /* TaskillerDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE80B8251F14D44F00F7CB29 /* TaskillerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */; };
 		AE80B8261F14D44F00F7CB29 /* TaskillerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE80B82C1F14D47C00F7CB29 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80B82B1F14D47C00F7CB29 /* Common.swift */; };
+		AE81D3D51F69279900819116 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81D3D41F69279900819116 /* CalendarViewController.swift */; };
+		AE81D3D71F69282100819116 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81D3D61F69282100819116 /* EditViewController.swift */; };
+		AE81D3D91F692B9500819116 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81D3D81F692B9500819116 /* FSCalendar.framework */; };
+		AE81D3DB1F694AC200819116 /* TaskBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE81D3DA1F694AC200819116 /* TaskBlockCell.xib */; };
+		AE81D3DD1F694DC800819116 /* TaskBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81D3DC1F694DC800819116 /* TaskBlockCell.swift */; };
 		AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */; };
 		AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9B12B91F08D18A005B96B4 /* Main.storyboard */; };
 		AE9B12BE1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9B12BC1F08D18A005B96B4 /* TaskillerDemo.xcdatamodeld */; };
@@ -68,14 +76,22 @@
 		AE048A3B1F63E246000D1118 /* Taskiller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Taskiller.entitlements; sourceTree = SOURCE_ROOT; };
 		AE061C141F0919AE00F91267 /* NewTaskCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE061C151F0919AE00F91267 /* NewTaskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE0901321F6FEE2600087E1D /* CommingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommingViewController.swift; sourceTree = "<group>"; };
+		AE4513BF1F683B70000F8BB6 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		AE4B3C041F090A7800DA4302 /* NewTaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskTableViewCell.swift; sourceTree = "<group>"; };
 		AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskTableViewCell.xib; sourceTree = "<group>"; };
 		AE551A261F65958700D40263 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		AE551A271F65958700D40263 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		AE64D0101F6A523A006C6496 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskillerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskillerDemoKit.h; sourceTree = "<group>"; };
 		AE80B8211F14D44F00F7CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE80B82B1F14D47C00F7CB29 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		AE81D3D41F69279900819116 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		AE81D3D61F69282100819116 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		AE81D3D81F692B9500819116 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		AE81D3DA1F694AC200819116 /* TaskBlockCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskBlockCell.xib; sourceTree = "<group>"; };
+		AE81D3DC1F694DC800819116 /* TaskBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBlockCell.swift; sourceTree = "<group>"; };
 		AE9B12B21F08D18A005B96B4 /* Taskiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9B12B51F08D18A005B96B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9B12BA1F08D18A005B96B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE81D3D91F692B9500819116 /* FSCalendar.framework in Frameworks */,
+				AE4513C01F683B70000F8BB6 /* SVProgressHUD.framework in Frameworks */,
 				AE551A281F65958700D40263 /* Realm.framework in Frameworks */,
 				AE551A291F65958700D40263 /* RealmSwift.framework in Frameworks */,
 				AEBA6F211F629A0B009EC4BD /* KeychainAccess.framework in Frameworks */,
@@ -121,6 +139,8 @@
 		AE0320171F08EC1300D92DA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE81D3D81F692B9500819116 /* FSCalendar.framework */,
+				AE4513BF1F683B70000F8BB6 /* SVProgressHUD.framework */,
 				AE551A261F65958700D40263 /* Realm.framework */,
 				AE551A271F65958700D40263 /* RealmSwift.framework */,
 				AEBA6F201F629A0B009EC4BD /* KeychainAccess.framework */,
@@ -183,6 +203,12 @@
 				AE9BE2221F65B81D0084A7F7 /* LoginViewController.swift */,
 				AE9BE2241F65BDB20084A7F7 /* RegisterViewController.swift */,
 				AEA77D781F68060900A81171 /* MeViewController.swift */,
+				AE81D3D41F69279900819116 /* CalendarViewController.swift */,
+				AE81D3D61F69282100819116 /* EditViewController.swift */,
+				AE81D3DA1F694AC200819116 /* TaskBlockCell.xib */,
+				AE81D3DC1F694DC800819116 /* TaskBlockCell.swift */,
+				AE64D0101F6A523A006C6496 /* SettingsViewController.swift */,
+				AE0901321F6FEE2600087E1D /* CommingViewController.swift */,
 			);
 			name = Taskiller;
 			path = TaskillerDemo;
@@ -317,6 +343,7 @@
 				AE061C171F0919AE00F91267 /* NewTaskCollectionViewCell.xib in Resources */,
 				AE0320161F08EB0100D92DA7 /* Cartfile in Resources */,
 				AE9B12BB1F08D18A005B96B4 /* Main.storyboard in Resources */,
+				AE81D3DB1F694AC200819116 /* TaskBlockCell.xib in Resources */,
 				AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +361,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
 			);
 			outputPaths = (
 			);
@@ -361,10 +390,15 @@
 				AE9BE2251F65BDB20084A7F7 /* RegisterViewController.swift in Sources */,
 				AE9B12CB1F08D2B2005B96B4 /* TodayViewController.swift in Sources */,
 				AE9B12B61F08D18A005B96B4 /* AppDelegate.swift in Sources */,
+				AE81D3DD1F694DC800819116 /* TaskBlockCell.swift in Sources */,
 				AE03201C1F08ED7200D92DA7 /* NewTaskViewController.swift in Sources */,
 				AEA20C931F4B3F5A007E910E /* MenuViewController.swift in Sources */,
+				AE64D0111F6A523A006C6496 /* SettingsViewController.swift in Sources */,
+				AE0901331F6FEE2600087E1D /* CommingViewController.swift in Sources */,
+				AE81D3D71F69282100819116 /* EditViewController.swift in Sources */,
 				AEA77D791F68060900A81171 /* MeViewController.swift in Sources */,
 				AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */,
+				AE81D3D51F69279900819116 /* CalendarViewController.swift in Sources */,
 				AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */,
 				AE061C161F0919AE00F91267 /* NewTaskCollectionViewCell.swift in Sources */,
 				AE9BE2231F65B81D0084A7F7 /* LoginViewController.swift in Sources */,

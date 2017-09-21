@@ -28,6 +28,11 @@ class NewTaskViewController: UIViewController {
         "Repeat"
     ]
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         selectTable.rowHeight = 50
@@ -84,20 +89,23 @@ extension NewTaskViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath.row {
+        case 0:
+            return
+        default:
+            return
+        }
     }
 
 }
 
 extension NewTaskViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 1
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Choice", for: indexPath) as! NewTaskCollectionViewCell
-        if indexPath.row == 8 {
-            cell.choiceName.text = "..."
-        }
         return cell
     }
 

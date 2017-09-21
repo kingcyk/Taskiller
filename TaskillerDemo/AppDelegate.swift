@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import TaskillerKit
+import SVProgressHUD
 
 let groupDefaults = UserDefaults(suiteName: AppGroupIdentifier)!
 
@@ -17,15 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if AccountManager.sharedInstance.currentAccount == nil {
             let sb = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let view = sb.instantiateViewController(withIdentifier: "LoginView")
+            let view = sb.instantiateViewController(withIdentifier: "LoginNavigation") as! UINavigationController
+            view.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            view.navigationBar.shadowImage = UIImage()
+//            view.navigationBar.setValue(0, forKeyPath: "backgroundView.alpha")
             self.window?.makeKeyAndVisible()
             self.window?.rootViewController?.present(view, animated: false, completion: nil)
         }
+        
+        SVProgressHUD.setMinimumDismissTimeInterval(1)
+        SVProgressHUD.setMaximumDismissTimeInterval(3)
         
         return true
     }

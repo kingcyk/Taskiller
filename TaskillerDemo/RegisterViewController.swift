@@ -8,6 +8,8 @@
 
 import UIKit
 import RealmSwift
+import SVProgressHUD
+import TaskillerKit
 
 class RegisterViewController: UIViewController {
 
@@ -28,24 +30,46 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func activeSecondField(_ sender: Any) {
+        passwordTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func activeThirdField(_ sender: Any) {
+        confirmTextField.becomeFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
 
     @IBAction func register(_ sender: UIButton) {
         let username = userNameTextField.text!
         let password = passwordTextField.text!
         let confirm = confirmTextField.text!
         if password != confirm {
-            // TODO: - Show error
+            SVProgressHUD.showError(withStatus: "Password inconsistent")
             return
-        } else {
-            let usernameCredentials = SyncCredentials.usernamePassword(username: username, password: password, register: true)
-            SyncUser.logIn(with: usernameCredentials, server: URL(string: serverURL)!, onCompletion: { (user, error) in
-                if let user = user {
-                    
-                } else if let error = error {
-                    print(error.localizedDescription)
-                }
-            })
         }
+        if !validateEmail(email: username) {
+            SVProgressHUD.showError(withStatus: "Invalid Email Address")
+            return
+        }
+        if !validatePassword(password: password) {
+            SVProgressHUD.showError(withStatus: "Invalid Password")
+            return
+        }
+        let usernameCredentials = SyncCredentials.usernamePassword(username: username, password: password, register: true)
+        SyncUser.logIn(with: usernameCredentials, server: URL(string: serverURL)!, onCompletion: { (user, error) in
+            if let user = user {
+                self.dismiss(animated: true, completion: nil)
+                SVProgressHUD.showSuccess(withStatus: "Register success")
+                
+            } else if let error = error {
+                SVProgressHUD.showError(withStatus: error.localizedDescription)
+                print(error.localizedDescription)
+            }
+        })
     }
     /*
     // MARK: - Navigation

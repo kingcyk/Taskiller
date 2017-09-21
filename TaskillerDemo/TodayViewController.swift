@@ -8,6 +8,7 @@
 
 import UIKit
 import TaskillerKit
+import AppStoreStyleHorizontalScrollView
 
 class TodayViewController: UIViewController {
 
@@ -26,6 +27,11 @@ class TodayViewController: UIViewController {
         dateFormatter.dateStyle = DateFormatter.Style.long
         dateLabel.text = dateFormatter.string(from: Date()).uppercased()
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapHandler))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        tapGestureRecognizer.delegate = self
+        avatarView.addGestureRecognizer(tapGestureRecognizer)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -33,7 +39,6 @@ class TodayViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -44,5 +49,15 @@ class TodayViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func tapHandler(_ sender: UITapGestureRecognizer) {
+        let sb = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let profileView = sb.instantiateViewController(withIdentifier: "ProfileView")
+        profileView.modalTransitionStyle = .flipHorizontal
+        profileView.modalPresentationStyle = .fullScreen
+        self.present(profileView, animated: true, completion: nil)
+    }
+}
 
+extension TodayViewController: UIGestureRecognizerDelegate {
+    
 }
