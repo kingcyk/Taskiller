@@ -18,6 +18,8 @@
 		AE4B3C071F090A7800DA4302 /* NewTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */; };
 		AE551A281F65958700D40263 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE551A261F65958700D40263 /* Realm.framework */; };
 		AE551A291F65958700D40263 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE551A271F65958700D40263 /* RealmSwift.framework */; };
+		AE61F83D1F73AD1D006FA719 /* CoreActionSheetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE61F83C1F73AD1D006FA719 /* CoreActionSheetPicker.framework */; };
+		AE61F83F1F73DCFB006FA719 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61F83E1F73DCFB006FA719 /* GuideViewController.swift */; };
 		AE64D0111F6A523A006C6496 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64D0101F6A523A006C6496 /* SettingsViewController.swift */; };
 		AE80B8221F14D44F00F7CB29 /* TaskillerDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE80B8251F14D44F00F7CB29 /* TaskillerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */; };
@@ -82,6 +84,8 @@
 		AE4B3C051F090A7800DA4302 /* NewTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskTableViewCell.xib; sourceTree = "<group>"; };
 		AE551A261F65958700D40263 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		AE551A271F65958700D40263 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		AE61F83C1F73AD1D006FA719 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreActionSheetPicker.framework; path = Carthage/Build/iOS/CoreActionSheetPicker.framework; sourceTree = "<group>"; };
+		AE61F83E1F73DCFB006FA719 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		AE64D0101F6A523A006C6496 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AE80B81E1F14D44E00F7CB29 /* TaskillerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskillerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE80B8201F14D44F00F7CB29 /* TaskillerDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskillerDemoKit.h; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE61F83D1F73AD1D006FA719 /* CoreActionSheetPicker.framework in Frameworks */,
 				AE81D3D91F692B9500819116 /* FSCalendar.framework in Frameworks */,
 				AE4513C01F683B70000F8BB6 /* SVProgressHUD.framework in Frameworks */,
 				AE551A281F65958700D40263 /* Realm.framework in Frameworks */,
@@ -139,6 +144,7 @@
 		AE0320171F08EC1300D92DA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE61F83C1F73AD1D006FA719 /* CoreActionSheetPicker.framework */,
 				AE81D3D81F692B9500819116 /* FSCalendar.framework */,
 				AE4513BF1F683B70000F8BB6 /* SVProgressHUD.framework */,
 				AE551A261F65958700D40263 /* Realm.framework */,
@@ -209,6 +215,7 @@
 				AE81D3DC1F694DC800819116 /* TaskBlockCell.swift */,
 				AE64D0101F6A523A006C6496 /* SettingsViewController.swift */,
 				AE0901321F6FEE2600087E1D /* CommingViewController.swift */,
+				AE61F83E1F73DCFB006FA719 /* GuideViewController.swift */,
 			);
 			name = Taskiller;
 			path = TaskillerDemo;
@@ -363,6 +370,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CoreActionSheetPicker.framework",
 			);
 			outputPaths = (
 			);
@@ -397,6 +405,7 @@
 				AE0901331F6FEE2600087E1D /* CommingViewController.swift in Sources */,
 				AE81D3D71F69282100819116 /* EditViewController.swift in Sources */,
 				AEA77D791F68060900A81171 /* MeViewController.swift in Sources */,
+				AE61F83F1F73DCFB006FA719 /* GuideViewController.swift in Sources */,
 				AE4B3C061F090A7800DA4302 /* NewTaskTableViewCell.swift in Sources */,
 				AE81D3D51F69279900819116 /* CalendarViewController.swift in Sources */,
 				AE9BA55E1F09266A00276EEF /* GalleryViewController.swift in Sources */,

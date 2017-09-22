@@ -51,10 +51,6 @@ class RegisterViewController: UIViewController {
             SVProgressHUD.showError(withStatus: "Password inconsistent")
             return
         }
-        if !validateEmail(email: username) {
-            SVProgressHUD.showError(withStatus: "Invalid Email Address")
-            return
-        }
         if !validatePassword(password: password) {
             SVProgressHUD.showError(withStatus: "Invalid Password")
             return

@@ -31,6 +31,10 @@ public class AccountManager: NSObject {
         currentAccount = username
     }
     
+    public func passwordForAccount(_ username: String) -> String? {
+        return taskillerKeychain[username]
+    }
+    
     public var currentAccount: String? {
         get {
             return groupDefaults.string(forKey: CurrentAccountKey)

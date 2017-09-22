@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1436" y="-241"/>
+            <point key="canvasLocation" x="1436" y="-241.52923538230885"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="So7-Dr-QOn">
@@ -903,6 +903,6 @@
         <image name="redbutton" width="140" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="az4-FV-fV1"/>
+        <segue reference="ine-gW-C1a"/>
     </inferredMetricsTieBreakers>
 </document>

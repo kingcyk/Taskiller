@@ -15,6 +15,8 @@ class MeViewController: UIViewController {
     @IBOutlet weak var nickyName: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     
+    let accountManager = AccountManager.sharedInstance
+    
     let icons = [
         "achievement",
         "taskdata"
@@ -29,6 +31,7 @@ class MeViewController: UIViewController {
         super.viewDidLoad()
 
         roundAvatar(avatar: avatar)
+        nickyName.text = accountManager.currentAccount
         profileTable.rowHeight = 50
         profileTable.separatorStyle = .none
         profileTable.dataSource = self

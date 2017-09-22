@@ -13,6 +13,8 @@ import SVProgressHUD
 
 let groupDefaults = UserDefaults(suiteName: AppGroupIdentifier)!
 
+let BuildKey = "Build1Key"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,12 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        if groupDefaults.object(forKey: BuildKey) == nil {
+//            window?.makeKeyAndVisible()
+//            window?.rootViewController?.present(GuideViewController(), animated: false, completion: nil)
+//            groupDefaults.set(true, forKey: BuildKey)
+//        }
+        
         if AccountManager.sharedInstance.currentAccount == nil {
             let sb = UIStoryboard(name: "Main", bundle: Bundle.main)
             let view = sb.instantiateViewController(withIdentifier: "LoginNavigation") as! UINavigationController
             view.navigationBar.setBackgroundImage(UIImage(), for: .default)
             view.navigationBar.shadowImage = UIImage()
-//            view.navigationBar.setValue(0, forKeyPath: "backgroundView.alpha")
             self.window?.makeKeyAndVisible()
             self.window?.rootViewController?.present(view, animated: false, completion: nil)
         }

@@ -15,10 +15,16 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
-    
-    let serverURL = "http://taskiller.kingcyk.com:9080"
-    
+        
     private let accountManager = AccountManager.sharedInstance
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if groupDefaults.object(forKey: BuildKey) == nil {
+            self.present(GuideViewController(), animated: false, completion: nil)
+            groupDefaults.set(true, forKey: BuildKey)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +50,6 @@ class LoginViewController: UIViewController {
         let username = userNameTextField.text!
         let password = passwordTextField.text!
         print("usr: \(username), pwd: \(password)")
-        if !validateEmail(email: username) {
-            SVProgressHUD.showError(withStatus: "Invalid Email Address")
-            return
-        }
         if !validatePassword(password: password) {
             SVProgressHUD.showError(withStatus: "Invalid Password")
             return
@@ -55,9 +57,10 @@ class LoginViewController: UIViewController {
         let usernameCredentials = SyncCredentials.usernamePassword(username: username, password: password, register: false)
         SVProgressHUD.show(withStatus: "Logging in...")
         SyncUser.logIn(with: usernameCredentials, server: URL(string: serverURL)!) { (user, error) in
-            if let user = user {
+            if user != nil {
                 self.dismiss(animated: true, completion: nil)
                 SVProgressHUD.showSuccess(withStatus: "Login success")
+                self.accountManager.addAccount(username, password)
             } else if let error = error {
                 SVProgressHUD.showError(withStatus: error.localizedDescription)
                 print("Login error: \(error.localizedDescription)")
